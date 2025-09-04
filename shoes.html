@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <title>가격정보 - 수제구두</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/component.css" />
+
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/vegas.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .price-list {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .price-list h2 {
+        font-size: 2em;
+        color: #333;
+        border-bottom: 2px solid #555;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      .price-list h3 {
+        font-size: 1.5em;
+        color: #555;
+        margin-top: 30px;
+      }
+      .price-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .price-list li {
+        background: #f9f9f9;
+        border: 1px solid #eee;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .price-item-info {
+        flex-grow: 1;
+      }
+      .price-item-price {
+        font-weight: bold;
+        color: #b19379;
+        font-size: 1.2em;
+      }
+      .price-item-origin {
+        color: #888;
+        font-size: 0.9em;
+      }
+
+      .intro-section {
+        padding: 60px 20px !important;
+        max-width: 1000px !important;
+        margin: 20px auto 40px auto !important;
+        font-family: Arial, sans-serif !important;
+        line-height: 1.6 !important;
+        text-align: center !important;
+        background: #fff;
+      }
+      
+      .price-list {
+        padding: 40px 20px !important;
+        max-width: 800px !important;
+        margin: 20px auto !important;
+        font-family: Arial, sans-serif !important;
+        line-height: 1.6 !important;
+        background: #fff;
+      }
+
+      .intro-section h1 {
+        font-size: 3em;
+        color: #333;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .intro-section p {
+        font-size: 1.2em;
+        color: #555;
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      
+      /* 전체 본문 텍스트 정렬 수정 */
+      body {
+        text-align: left;
+        direction: ltr;
+        padding-top: 70px; /* 네비게이션 높이만큼 */
+      }
+      
+      main {
+        text-align: left;
+        min-height: 100vh;
+      }
+
+      /* 수제화 페이지 갤러리 및 특징 스타일 */
+      .shoe-hero {
+          max-width: 800px;
+          height: 500px; /* 큰 사진을 위한 공간 */
+          margin: 20px auto;
+          background-color: #f0f0f0;
+          border: 1px solid #ddd;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #888;
+          font-size: 1.2em;
+          text-align: center;
+          margin-bottom: 40px;
+      }
+      .features-section {
+          max-width: 800px;
+          margin: 0 auto 40px auto;
+          padding: 0 20px;
+      }
+      .features-section h3 {
+          font-size: 1.5em;
+          color: #555;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 5px;
+          margin-bottom: 20px;
+      }
+      .feature-item {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 15px;
+          line-height: 1.5;
+      }
+      .feature-item strong {
+          flex-shrink: 0;
+          width: 120px;
+          color: #b19379;
+      }
+      .feature-item span {
+          flex-grow: 1;
+          color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="#top" class="navbar-brand smoothScroll">albertotailer</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#top" class="smoothScroll"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#about" class="smoothScroll"><span>About</span></a>
+            </li>
+
+            <li class="dropdown">
+              <a href="#gallery" class="smoothScroll"><span>Garment ▼</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="#bespoke" class="smoothScroll"
+                    ><span>Bespoke</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mtm.html" class="smoothScroll"><span>MTM</span></a>
+                </li>
+                <li>
+                  <a href="#rental" class="smoothScroll"><span>Rental</span></a>
+                </li>
+                <li>
+                  <a href="#shoes" class="smoothScroll"><span>Shoes</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#event" class="smoothScroll"><span>Event</span></a>
+            </li>
+            <li>
+              <a href="#archive" class="smoothScroll"><span>Archive</span></a>
+            </li>
+            <li>
+              <a href="#contact" class="smoothScroll"><span>contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="intro-section">
+        <div class="containers">
+          <h1 class="wow fadeInUp" data-wow-delay="0.2s">수제 구두</h1>
+          <p class="wow fadeInUp" data-wow-delay="0.4s">
+            나만을 위한 단 하나의 완벽함, 수제 구두 서비스를 만나보세요.<br />단순히 발에 맞는 것을 넘어, 당신의 개성과 편안함을 모두 담아 세상에 하나뿐인 구두를 제작해 드립니다.
+          </p>
+        </div>
+      </div>
+      
+      <div class="shoe-hero">
+        <p>수제 구두 대표 사진</p>
+      </div>
+      
+      <div class="features-section">
+        <h2>알베르토테일러 수제 구두의 특별함</h2>
+        <div class="feature-item">
+          <strong>개별 맞춤 제작</strong>
+          <span>발볼, 발등 등 고객님의 발 특이사항을 꼼꼼히 측정하여 가장 편안한 핏을 찾아드립니다.</span>
+        </div>
+        <div class="feature-item">
+          <strong>다양한 디자인과 컬러</strong>
+          <span>수많은 디자인 샘플과 컬러 선택으로 당신의 개성을 담은 구두를 제작할 수 있습니다.</span>
+        </div>
+      </div>
+
+      <div class="price-list">
+        <h2>가격 안내</h2>
+        <ul>
+          <li>
+            <div class="price-item-info">
+              <span class="price-item-origin">수제 구두 기본 가격</span>
+              <strong>맞춤 제작</strong>
+            </div>
+            <div class="price-item-price">280,000원 ~ 330,000원</div>
+          </li>
+          <li>
+            <div class="price-item-info">
+              <span class="price-item-origin">추가 옵션</span>
+              7cm 키높이 통굽
+            </div>
+            <div class="price-item-price">30,000원</div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="intro-section" style="padding-top: 20px; padding-bottom: 20px;">
+        <p class="wow fadeInUp" data-wow-delay="0.4s">
+          세상에 하나뿐인 당신의 구두를 경험해 보세요.<br />자세한 상담 및 제작을 위해 언제든 편하게 매장을 방문해 주시기 바랍니다.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <ul class="social-icon">
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-facebook wow fadeInUp"
+                  data-wow-delay="0.2s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-twitter wow fadeInUp"
+                  data-wow-delay="0.4s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-linkedin wow fadeInUp"
+                  data-wow-delay="0.6s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-instagram wow fadeInUp"
+                  data-wow-delay="0.8s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-google-plus wow fadeInUp"
+                  data-wow-delay="1.0s"
+                ></a>
+              </li>
+            </ul>
+
+            <p class="wow fadeInUp" data-wow-delay="1s">
+              Copyright &copy; 2025 albertotailer | Design:
+              <a
+                href="https://plus.google.com/+templatemo"
+                title="free css templates"
+                target="_blank"
+                >HEE</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/toucheffects.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <title>가격정보 - 맞춤정장</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/component.css" />
+
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/vegas.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Google web font  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      .price-list {
+        padding: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      .price-list h2 {
+        font-size: 2em;
+        color: #333;
+        border-bottom: 2px solid #555;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+      }
+      .price-list h3 {
+        font-size: 1.5em;
+        color: #555;
+        margin-top: 30px;
+      }
+      .price-list ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      .price-list li {
+        background: #f9f9f9;
+        border: 1px solid #eee;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .price-item-info {
+        flex-grow: 1;
+      }
+      .price-item-price {
+        font-weight: bold;
+        color: #b19379;
+        font-size: 1.2em;
+      }
+      .price-item-origin {
+        color: #888;
+        font-size: 0.9em;
+      }
+
+      .intro-section {
+          padding: 60px 20px !important;
+          max-width: 1000px !important;
+          margin: 20px auto 40px auto !important;
+          font-family: Arial, sans-serif !important;
+          line-height: 1.6 !important;
+          text-align: center !important;
+          background: #fff;
+
+      }
+      
+      .price-list {
+          padding: 40px 20px !important;
+          max-width: 800px !important;
+          margin: 20px auto !important;
+          font-family: Arial, sans-serif !important;
+          line-height: 1.6 !important;
+          background: #fff;
+
+      }
+
+      .intro-section h1 {
+          font-size: 3em;
+          color: #333;
+          margin-bottom: 20px;
+          text-align: center;
+      }
+      .intro-section p {
+          font-size: 1.2em;
+          color: #555;
+          text-align: center;
+          max-width: 600px;
+          margin: 0 auto;
+      }
+      
+      /* 전체 본문 텍스트 정렬 수정 */
+      body {
+          text-align: left;
+          direction: ltr;
+          padding-top: 70px; /* 네비게이션 높이만큼 */
+      }
+      
+      main {
+          text-align: left;
+          min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Preloader section -->
+
+    <div class="preloader">
+      <div class="sk-spinner sk-spinner-pulse"></div>
+    </div>
+
+    <!-- Navigation section  -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="#top" class="navbar-brand smoothScroll">albertotailer</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="#top" class="smoothScroll"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#about" class="smoothScroll"><span>About</span></a>
+            </li>
+
+            <!-- Garment 드롭다운 추가 -->
+            <li class="dropdown">
+              <a href="#gallery" class="smoothScroll"><span>Garment ▼</span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="bespoke.html" class="smoothScroll"
+                    ><span>Bespoke</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mtm.html" class="smoothScroll"><span>MTM</span></a>
+                </li>
+                <li>
+                  <a href="#rental" class="smoothScroll"><span>Rental</span></a>
+                </li>
+                <li>
+                  <a href="#shoes" class="smoothScroll"><span>Shoes</span></a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#event" class="smoothScroll"><span>Event</span></a>
+            </li>
+            <li>
+              <a href="#archive" class="smoothScroll"><span>Archive</span></a>
+            </li>
+            <li>
+              <a href="#contact" class="smoothScroll"><span>contact</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <main>
+<div class="intro-section">
+  <div class="containers">
+    <h1 class="wow fadeInUp" data-wow-delay="0.2s">Bespoke</h1>
+    <p class="wow fadeInUp" data-wow-delay="0.4s">
+      비스포크(Bespoke)는 고객의 체형을 직접 측정하고, 모든 제작 과정을 손바느질로 완성하는 최고급 맞춤 방식입니다. 오직 한 사람만을 위한 패턴으로 제작되어 완벽한 착용감과 특별한 가치를 선사합니다.
+    </p>
+  </div>
+</div>
+<div class="price-list">
+  <h2>맞춤정장 가격표</h2>
+
+  <h3>850,000 ~ 1,100,000</h3>
+  <ul>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">한국</span>
+        <strong>ESSOR</strong>
+      </div>
+      <div class="price-item-price">850,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">한국</span>
+        <strong>HERALZ</strong>
+      </div>
+      <div class="price-item-price">950,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">한국</span>
+        <strong>TESORO</strong>
+      </div>
+      <div class="price-item-price">1,000,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">한국</span>
+        <strong>VALENTE, AQUARIUS</strong>
+      </div>
+      <div class="price-item-price">1,100,000</div>
+    </li>
+  </ul>
+
+  <h3>1,200,000 ~ 1,500,000</h3>
+  <ul>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">한국</span>
+        <strong>LIBRA</strong>
+      </div>
+      <div class="price-item-price">1,200,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>ROYAL ASCOT</strong>
+      </div>
+      <div class="price-item-price">1,200,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">이태리</span>
+        <strong>ANGELICO</strong>
+      </div>
+      <div class="price-item-price">1,200,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>VANGUARD</strong>
+      </div>
+      <div class="price-item-price">1,400,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>JHON CAVEDISH</strong>
+      </div>
+      <div class="price-item-price">1,400,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">이태리</span>
+        <strong>CANONICO</strong>
+      </div>
+      <div class="price-item-price">1,400,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>HUDDERSFIELD LONDON-SAVILOW CLASSIC</strong>
+      </div>
+      <div class="price-item-price">1,500,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">이태리</span>
+        <strong>DRAGO</strong>
+      </div>
+      <div class="price-item-price">1,500,000</div>
+    </li>
+  </ul>
+
+  <h3>1,600,000 ~ 2,400,000</h3>
+  <ul>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>ALFRED BROWN</strong>
+      </div>
+      <div class="price-item-price">1,600,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">이태리</span>
+        <strong>ARISTON - LUNAMIELE</strong>
+      </div>
+      <div class="price-item-price">1,800,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">이태리</span>
+        <strong>LOLO PIANA</strong>
+      </div>
+      <div class="price-item-price">2,100,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">이태리</span>
+        <strong>ARISTON</strong>
+      </div>
+      <div class="price-item-price">2,200,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>HOLLAND & SHERRY</strong>
+      </div>
+      <div class="price-item-price">2,400,000</div>
+    </li>
+    <li>
+      <div class="price-item-info">
+        <span class="price-item-origin">영국</span>
+        <strong>SCABAL</strong>
+      </div>
+      <div class="price-item-price">2,400,000</div>
+    </li>
+  </ul>
+</div>
+    </main>
+    <!-- Footer section -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <ul class="social-icon">
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-facebook wow fadeInUp"
+                  data-wow-delay="0.2s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-twitter wow fadeInUp"
+                  data-wow-delay="0.4s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-linkedin wow fadeInUp"
+                  data-wow-delay="0.6s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-instagram wow fadeInUp"
+                  data-wow-delay="0.8s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa fa-google-plus wow fadeInUp"
+                  data-wow-delay="1.0s"
+                ></a>
+              </li>
+            </ul>
+
+            <p class="wow fadeInUp" data-wow-delay="1s">
+              Copyright &copy; 2025 albertotailer | Design:
+              <a
+                href="https://plus.google.com/+templatemo"
+                title="free css templates"
+                target="_blank"
+                >HEE</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Back top -->
+    <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+    <!-- Javascript  -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vegas.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/toucheffects.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
