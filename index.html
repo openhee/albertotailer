@@ -8,41 +8,110 @@
     <meta name="description" content="" />
 
     <title>안녕하세요. 알베르토테일러 입니다.</title>
-    <!--
-Snapshot Template
-http://www.templatemo.com/tm-493-snapshot
-
-Zoom Slider
-https://vegas.jaysalvat.com/
-
-Caption Hover Effects
-http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
--->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/component.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/owl.theme.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/vegas.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google web font  -->
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300"
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      .pretty-button {
+        /* 버튼 기본 스타일 */
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 50px; /* 둥근 모서리 */
+        background: linear-gradient(45deg, #28a745, #218838); /* 초록색 그라데이션 배경 */
+        color: white; /* 글자색 */
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none; /* 밑줄 제거 */
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        /* 그림자 효과 */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        /* 전환 효과 (호버 시 부드럽게) */
+        transition: all 0.3s ease;
+      }
+
+      /* 마우스 오버(호버) 시 효과 */
+      .pretty-button:hover {
+        transform: translateY(-3px); /* 위로 살짝 올라가는 효과 */
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      /* 마우스 클릭 시 효과 */
+      .pretty-button:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .pretty-button-secondary {
+        display: inline-block;
+        padding: 12px 24px;
+        border-radius: 50px;
+        background: linear-gradient(45deg, #28a745, #218838); /* 초록색 그라데이션 배경 */
+        color: white; /* 글자색 */
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      .pretty-button-secondary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        background: #405566; /* 호버 시 약간 밝게 */
+      }
+
+      .spacer {
+        height: 20px;
+      }
+
+      .spacer-small {
+        height: 10px;
+      }
+
+      .contact-number {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .contact-link {
+        color: #f6c15e; /* 강조 색상 */
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .contact-link:hover {
+        color: #ff6b6b; /* 마우스 오버 시 색상 변경 */
+      }
+    </style>
   </head>
   <body id="top" data-spy="scroll" data-offset="50" data-target=".navbar">
-    <!-- Preloader section -->
-
     <div class="preloader">
       <div class="sk-spinner sk-spinner-pulse"></div>
     </div>
-
-    <!-- Navigation section  -->
 
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
@@ -67,7 +136,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               <a href="#about" class="smoothScroll"><span>About</span></a>
             </li>
 
-            <!-- Garment 드롭다운 추가 -->
             <li class="dropdown">
               <a href="#gallery" class="smoothScroll"><span>Garment ▼</span></a>
               <ul class="dropdown-menu">
@@ -80,10 +148,14 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                   <a href="mtm.html" class="smoothScroll"><span>MTM</span></a>
                 </li>
                 <li>
-                  <a href="rental.html" class="smoothScroll"><span>Rental</span></a>
+                  <a href="rental.html" class="smoothScroll"
+                    ><span>Rental</span></a
+                  >
                 </li>
                 <li>
-                  <a href="shoes.html" class="smoothScroll"><span>Shoes</span></a>
+                  <a href="shoes.html" class="smoothScroll"
+                    ><span>Shoes</span></a
+                  >
                 </li>
               </ul>
             </li>
@@ -94,16 +166,12 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               <a href="#archive" class="smoothScroll"><span>Archive</span></a>
             </li>
             <li>
-              <a href="#contact" class="smoothScroll"
-                ><span>contact</span></a
-              >
+              <a href="#contact" class="smoothScroll"><span>contact</span></a>
             </li>
           </ul>
         </div>
       </div>
     </div>
-
-    <!-- Home section -->
 
     <section id="home">
       <div class="overlay"></div>
@@ -111,9 +179,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         <div class="row"></div>
       </div>
     </section>
-    <!-- ABOUT section -->
-    <!-- About section -->
-
     <section id="about">
       <div class="container">
         <div class="row">
@@ -121,7 +186,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             <div class="about-thumb">
               <h1>Master Tailor, Mr. Yoon</h1>
               <p>
-                20년간 맞춤정장 분야에서 쌓아온 전문 기술로, 영국 전통 테일러링
+                20년간 맞춤정장 분야에서 쌓아온 전문 기술로, 전통 테일러링
                 기법과 한국인 체형에 최적화된 패턴 설계를 결합합니다. 수천 벌의
                 정장 제작 경험을 바탕으로 완벽한 핏과 최상급 퀄리티를
                 보장합니다.
@@ -149,7 +214,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             </div>
           </div>
 
-          <!-- team carousel -->
           <div id="team-carousel" class="owl-carousel">
             <div
               class="item col-md-4 col-sm-6 wow fadeInUp"
@@ -182,10 +246,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                     alt="Jack"
                   />
                 </div>
-                <h2 class="heading">Jack, Founder</h2>
-                <p class="description">
-                  Maecenas sed diam eget risus varius blandit sit non.
-                </p>
+                <h2 class="heading">설, designer</h2>
+                <p class="description">최고의 정장을 디자인 해 드립니다.</p>
               </div>
             </div>
 
@@ -208,106 +270,10 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               </div>
             </div>
 
-            <div
-              class="item col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div class="team-thumb">
-                <div class="image-holder">
-                  <img
-                    src="images/team-img4.jpg"
-                    class="img-responsive img-circle"
-                    alt="Sandy"
-                  />
-                </div>
-                <h2 class="heading">Sandy, Director</h2>
-                <p class="description">
-                  Curabitur vulputate euismod neque et tincidunt.
-                </p>
-              </div>
             </div>
-
-            <div
-              class="item col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div class="team-thumb">
-                <div class="image-holder">
-                  <img
-                    src="images/team-img5.jpg"
-                    class="img-responsive img-circle"
-                    alt="Lukia"
-                  />
-                </div>
-                <h2 class="heading">Lukia, Fashion</h2>
-                <p class="description">
-                  Maecenas sed diam eget risus varius blandit sit.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="item col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div class="team-thumb">
-                <div class="image-holder">
-                  <img
-                    src="images/team-img6.jpg"
-                    class="img-responsive img-circle"
-                    alt="George"
-                  />
-                </div>
-                <h2 class="heading">George, Admin</h2>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="item col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div class="team-thumb">
-                <div class="image-holder">
-                  <img
-                    src="images/team-img7.jpg"
-                    class="img-responsive img-circle"
-                    alt="Day"
-                  />
-                </div>
-                <h2 class="heading">Day, Accountant</h2>
-                <p class="description">
-                  Maecenas sed diam eget risus varius blandit sit.
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="item col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.8s"
-            >
-              <div class="team-thumb">
-                <div class="image-holder">
-                  <img
-                    src="images/team-img8.jpg"
-                    class="img-responsive img-circle"
-                    alt="Lynn"
-                  />
-                </div>
-                <h2 class="heading">Lynn, Marketing</h2>
-                <p class="description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing.
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
-    <!-- Garment section -->
-
     <section id="gallery">
       <div class="container">
         <div class="row">
@@ -350,7 +316,7 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 <figcaption>
                   <h1>Rental</h1>
                   <small></small>
-                  <a href="rental.html">Learn More</a>
+                  <a href="rental.html">Read More</a>
                 </figcaption>
               </figure>
             </li>
@@ -358,12 +324,12 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             <li class="col-md-6 col-sm-6">
               <figure>
                 <div>
-                  <img src="images\garment-img-shoes-02.JPG" alt="image 4" />
+                  <img src="images\gallary-img-04.png" alt="image 4" />
                 </div>
                 <figcaption>
                   <h1>Handmade shoes</h1>
                   <small>내 발에 딱 맞게.</small>
-                  <a href="#">Full Post</a>
+                  <a href="shoes.html">Read More</a>
                 </figcaption>
               </figure>
             </li>
@@ -371,7 +337,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
     </section>
-    <!-- Event section -->
     <section id="event">
       <div class="container">
         <div class="row">
@@ -385,7 +350,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             </div>
           </div>
 
-          <!-- 웨딩 패키지 섹션 추가 -->
           <div class="col-md-10 col-md-offset-1" style="margin-bottom: 60px">
             <div
               style="
@@ -395,7 +359,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
               "
             >
-              <!-- 패키지 헤더 -->
               <div
                 style="
                   background: #e44c65;
@@ -440,7 +403,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 </p>
               </div>
 
-              <!-- 가격 정보 -->
               <div style="text-align: center; margin-bottom: 30px">
                 <p style="font-size: 18px; color: #666; margin-bottom: 10px">
                   <strong
@@ -463,7 +425,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 </p>
               </div>
 
-              <!-- 연락처 -->
               <div
                 style="
                   text-align: center;
@@ -486,7 +447,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
             </div>
           </div>
 
-          <!-- 네이버 리뷰 이벤트 -->
           <div class="col-md-10 col-md-offset-1" style="margin-bottom: 60px">
             <div
               style="
@@ -496,7 +456,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
               "
             >
-              <!-- 이벤트 헤더 -->
               <div
                 style="
                   background: #304352;
@@ -525,7 +484,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 </p>
               </div>
 
-              <!-- 이벤트 내용 -->
               <div style="text-align: center; margin-bottom: 30px">
                 <div
                   style="
@@ -559,7 +517,6 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
                 </div>
               </div>
 
-              <!-- 혜택 안내 -->
               <div
                 style="
                   text-align: center;
@@ -581,56 +538,83 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
         </div>
       </div>
     </section>
-    <!-- 섹션 구분선 -->
-<div style="
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(to right, transparent, #ddd, transparent);
-  margin: 60px 0;
-"></div>
-    <!-- Archive section -->
-<section id="archive">
-  <div class="container">
-    <div class="row">
-      <div
-        class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp"
-        data-wow-delay="0.3s"
-      >
-        <div class="section-title text-center">
-          <h1>Archive</h1>
-          <p>알베르토테일러의 작업 히스토리와 고객 사례를 확인하세요.</p>
-        </div>
-      </div>
-      
-      <!-- 아카이브 콘텐츠 추가 -->
-      <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-        <div style="text-align: center; padding: 20px;">
-          <h3>2024 컬렉션</h3>
-          <p>올해 제작된 맞춤 정장들의<br>특별한 사례들을 모아보세요.</p>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-        <div style="text-align: center; padding: 20px;">
-          <h3>웨딩 갤러리</h3>
-          <p>특별한 날을 위한<br>맞춤 웨딩슈트 작품들</p>
-        </div>
-      </div>
-      
-      <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-        <div style="text-align: center; padding: 20px;">
-          <h3>고객 후기</h3>
-          <p>만족해주신 고객분들의<br>생생한 후기와 사진</p>
-        </div>
-      </div>
-      
-      <!-- 추가 공간 확보 -->
-      <div class="col-md-12" style="height: 100px;"></div>
+
+    <div
+      style="
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, #ddd, transparent);
+        margin: 60px 0;
+      "
+    ></div>
+    <section id="archive">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp"
+            data-wow-delay="0.3s"
+          >
+            <div class="section-title text-center">
+              <h1>Archive</h1>
+              <p>알베르토테일러의 작업 히스토리와 고객 사례를 확인하세요.</p>
+            </div>
+          </div>
+<!-- 
+          <div class="col-md-4 col-sm-6" style="margin-bottom: 30px">
+            <div style="text-align: center; padding: 20px">
+              <h3>2024 컬렉션</h3>
+              <p>
+                올해 제작된 맞춤 정장들의<br />특별한 사례들을 모아보세요.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-6" style="margin-bottom: 30px">
+            <div style="text-align: center; padding: 20px">
+              <h3>웨딩 갤러리</h3>
+              <p>
+                특별한 날을 위한<br />맞춤 웨딩슈트 작품들
+              </p>
+            </div>
+          </div> -->
+
+          <!-- <div class="col-md-4 col-sm-6" style="margin-bottom: 30px">
+            <div style="text-align: center; padding: 20px">
+              <h3>고객 후기</h3>
+              <p>
+                만족해주신 고객분들의<br />생생한 후기와 사진
+              </p>
+            </div>
+          </div> -->
+          <div class="gallery-container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <img src="images/archive-img-01.png" alt="2024 컬렉션 1" class="img-responsive archive-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="images/archive-img-02.png" alt="2024 컬렉션 2" class="img-responsive archive-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="images/archive-img-03.png" alt="웨딩 갤러리 1" class="img-responsive archive-img">
     </div>
   </div>
-</section>
-  <!-- Contact section -->
-
+  
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <img src="images/archive-img-04.png" alt="웨딩 갤러리 2" class="img-responsive archive-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="images/archive-img-05.png" alt="고객 후기 1" class="img-responsive archive-img">
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <img src="images/archive-img-06.png" alt="고객 후기 2" class="img-responsive archive-img">
+    </div>
+  </div>
+</div>  
+          <div class="col-md-12" style="height: 100px"></div>
+        </div>
+      </div>
+    </section>
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -639,11 +623,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp"
               data-wow-delay="0.4s"
             >
-              <h1>Send a message</h1>
-              <p>
-                Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
+              <h1>how to contact</h1>
+              <p>네이버 예약사이트에서 예약 가능합니다.</p>
             </div>
 
             <form
@@ -652,70 +633,65 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
               class="wow fadeInUp"
               data-wow-delay="0.8s"
             >
-              <div class="col-md-6 col-sm-6">
-                <input
-                  name="name"
-                  type="text"
-                  class="form-control"
-                  id="name"
-                  placeholder="Name"
-                />
+              <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6 text-center">
+                <a href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%95%8C%EB%B2%A0%EB%A5%B4%ED%86%A0%ED%85%8C%EC%9D%BC%EB%9F%AC&ackey=9iy9b5he" class="pretty-button" target="_blank"> 예약하다 </a>
+
+                <div class="spacer"></div>
+
+                <a href="https://blog.naver.com/albertotailor" class="pretty-button-secondary" target="_blank"> 블로그 둘러보기 </a>
+
+                <div class="spacer-small"></div>
+
+                <p class="contact-number">전화: <a href="tel:043-257-2200" class="contact-link">043-257-2200</a></p>
               </div>
-              <div class="col-md-6 col-sm-6">
-                <input
-                  name="email"
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  placeholder="Email"
-                />
-              </div>
-              <div class="col-md-12 col-sm-12">
-                <textarea
-                  name="message"
-                  rows="6"
-                  class="form-control"
-                  id="message"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-              <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-                <input
-                  type="submit"
-                  class="form-control"
-                  value="SEND MESSAGE"
-                />
-              </div>
+              
             </form>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer section -->
-
     <footer>
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
             <ul class="social-icon">
-    <li>
-        <a href="https://www.facebook.com/albertotailorsuit/" class="fa-brands fa-facebook-f wow fadeInUp" data-wow-delay="0.2s"></a>
-    </li>
-    <li>
-        <a href="#" class="fa-brands fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a>
-    </li>
-    <li>
-        <a href="#" class="fa-brands fa-linkedin-in wow fadeInUp" data-wow-delay="0.6s"></a>
-    </li>
-    <li>
-        <a href="https://www.instagram.com/albertotailor" class="fa-brands fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a>
-    </li>
-    <li>
-        <a href="https://www.google.com/search?q=%EC%95%8C%EB%B2%A0%EB%A5%B4%ED%86%A0%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%B2%AD%EC%A3%BC%EC%A0%90&sca_esv=7550878c098e0420&ei=v6q5aOyTL5Gv0-kPiNinyQs&ved=0ahUKEwis77LtsL-PAxWR1zQHHQjsKbkQ4dUDCBA&uact=5&oq=%EC%95%8C%EB%B2%A0%EB%A5%B4%ED%86%A0%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%B2%AD%EC%A3%BC%EC%A0%90&gs_lp=Egxnd3Mtd2l6LXNlcnAiH-yVjOuyoOultO2GoO2FjOydvOufrCDssq3so7zsoJAyAhAmMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wVIyRZQlQNY9BVwAngAkAEBmAGUAaABmQuqAQQwLjExuAEDyAEA-AEBmAIIoAKUBsICCBAAGO8FGLADmAMA4gMFEgExIECIBgGQBgWSBwMyLjagB4crsgcDMC42uAeMBsIHAzItOMgHHw&sclient=gws-wiz-serp" class="fa-brands fa-google-plus-g wow fadeInUp" data-wow-delay="1.0s"></a>
-    </li>
-    
-</ul>
+              <li>
+                <a
+                  href="https://www.facebook.com/albertotailorsuit/"
+                  class="fa-brands fa-facebook-f wow fadeInUp"
+                  data-wow-delay="0.2s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa-brands fa-twitter wow fadeInUp"
+                  data-wow-delay="0.4s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="fa-brands fa-linkedin-in wow fadeInUp"
+                  data-wow-delay="0.6s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/albertotailor"
+                  class="fa-brands fa-instagram wow fadeInUp"
+                  data-wow-delay="0.8s"
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.google.com/search?q=%EC%95%8C%EB%B2%A0%EB%A5%B4%ED%86%A0%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%B2%AD%EC%A3%BC%EC%A0%90&sca_esv=7550878c098e0420&ei=v6q5aOyTL5Gv0-kPiNinyQs&ved=0ahUKEwis77LtsL-PAxWR1zQHHQjsKbkQ4dUDCBA&uact=5&oq=%EC%95%8C%EB%B2%A0%EB%A5%B4%ED%86%A0%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%B2%AD%EC%A3%BC%EC%A0%90&gs_lp=Egxnd3Mtd2l6LXNlcnAiH-yVjOuyoOultO2GoO2FjOydvOufrCDssq3so7zsoJAyAhAmMgUQABjvBTIFEAAY7wUyCBAAGIkFGKIEMgUQABjvBTIFEAAY7wVIyRZQlQNY9BVwAngAkAEBmAGUAaABmQuqAQQwLjExuAEDyAEA-AEBmAIIoAKUBsICCBAAGO8FGLADmAMA4gMFEgExIECIBgGQBgWSBwMyLjagB4crsgcDMC42uAeMBsIHAzItOMgHHw&sclient=gws-wiz-serp"
+                  class="fa-brands fa-google-plus-g wow fadeInUp"
+                  data-wow-delay="1.0s"
+                ></a>
+              </li>
+            </ul>
 
             <p class="wow fadeInUp" data-wow-delay="1s">
               Copyright &copy; 2025 albertotailer | Design:
@@ -731,10 +707,8 @@ http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
       </div>
     </footer>
 
-    <!-- Back top -->
     <a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
 
-    <!-- Javascript  -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vegas.min.js"></script>
